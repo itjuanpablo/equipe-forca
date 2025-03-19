@@ -5,9 +5,9 @@
 :root {
   --header-height: 3.5rem; /*56px*/
 
-  /*========== Colors ==========*/
+  /*========== Colors old ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --hue: 152;
+  /* --hue: 152;
   --first-color: hsl(var(--hue), 24%, 32%);
   --first-color-alt: hsl(var(--hue), 24%, 28%);
   --first-color-light: hsl(var(--hue), 24%, 66%);
@@ -16,7 +16,20 @@
   --text-color: hsl(var(--hue), 4%, 35%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
   --body-color: hsl(var(--hue), 0%, 100%);
-  --container-color: #FFF;
+  --container-color: #FFF; */
+
+  /*========== Colors New ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --hue: 220; /* Azul elétrico */
+  --first-color: hsl(var(--hue), 100%, 40%); /* Azul principal */
+  --first-color-alt: hsl(var(--hue), 100%, 35%); /* Azul escuro */
+  --first-color-light: hsl(var(--hue), 100%, 70%); /* Azul claro */
+  --first-color-lighten: hsl(var(--hue), 100%, 90%); /* Azul bem suave */
+  --title-color: hsl(0, 0%, 100%); /* Branco para títulos */
+  --text-color: hsl(0, 0%, 85%); /* Branco acinzentado para texto */
+  --text-color-light: hsl(0, 0%, 65%); /* Texto mais claro */
+  --body-color: hsl(0, 0%, 5%); /* Preto para fundo */
+  --container-color: hsl(0, 0%, 10%); /* Cinza escuro para containers */
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -220,6 +233,11 @@ the website, in dark theme
 .nav__logo-icon{
   font-size: 1.15rem;
   color: var(--first-color);
+}
+
+.nav__logo img {
+  width: 50px;
+  height: 50px;
 }
 
 .nav__logo:hover{
@@ -508,12 +526,29 @@ the website, in dark theme
   margin-bottom: var(--mb-0-5);
 }
 
-.steps__card-description{
+.steps__card-description a{
   font-size: var(--small-font-size);
+  color: var(--big-font-size);
 }
 
 .steps__card:hover .steps__card-number{
   transform: translateY(-.25rem);
+}
+ 
+.instagram a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--bg-light);
+  font-weight: lighter;
+  font-size: var(--small-font-size);
+  margin-top: 1rem;
+}
+
+.instagram i {
+  font-size: var(--small-font-size); /* Ajusta o tamanho do ícone */
+  margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+  margin-top: 0.1rem;
 }
 
 /*=============== PRODUCTS ===============*/
@@ -767,6 +802,11 @@ the website, in dark theme
 .footer__logo-icon{
   font-size: 1.15rem;
   color: var(--first-color);
+}
+
+.footer__logo img {
+  width: 50px;
+  height: 50px;
 }
 
 .footer__logo:hover{
