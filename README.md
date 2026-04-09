@@ -1,4 +1,4 @@
-# 🌐 README — Portal Equipe Força
+# 🌐 Portal da Equipe Força
 
 ## 📌 Descrição
 
